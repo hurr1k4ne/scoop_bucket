@@ -1,0 +1,38 @@
+{
+    "version": "0.19.22522",
+    "description": "Freecad nightly builds",
+    "homepage": "https://www.freecadweb.org",
+    "license": "GPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_0.19.22522-Win-Conda_vc14.x-x86_64.7z",
+            "extract_dir": "FreeCAD_0.19.22522-Win-Conda_vc14.x-x86_64",
+            "hash": "ebe3fb6092cb120652072cd89febdedd18237da85394eadd1bc612715515b765"
+        }
+    },
+    "bin": [
+        "bin\\freecad.exe"
+    ],
+    "shortcuts": [
+        [
+            "bin\\freecad.exe",
+            "FreeCAD"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/supermerill/FreeCAD",
+        "regex": "(?sm)FreeCAD_[\\d.]+-Win-Conda_vc14.x-x86_64.7z"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_$version-Win-Conda_vc14.x-x86_64.7z",
+                "extract_dir": "FreeCAD_$version-Win-Conda_vc14.x-x86_64"
+            }
+        },
+        "hash": {
+            "url": "$url-SHA256.txt",
+            "regex": "(?sm):\\s+([a-fA-F\\d\\s]+)CertUtil"
+        }
+    }
+}
