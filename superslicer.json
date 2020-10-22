@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.2.54.1/SuperSlicer_2.2.54.1_win64_20201022.zip",
             "hash": "f3f21e2afec2290fd874201a8a9caf9aeeb00b187f9c8be48ad7e0eb15b6ee5b",
-            "extract_dir": "PrusaSlicer-2.2.54.1_win64_20201022"
+            "extract_dir": "SuperSlicer_2.2.54.1_win64_20201022"
         }
     },
     "bin": [
@@ -28,7 +28,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/supermerill/SuperSlicer/releases/download/$version/SuperSlicer_$version_win64_$matchTimestamp64.zip",
-                "extract_dir": "PrusaSlicer-$version_win64_$matchTimestamp64"
+                "extract_dir": "SuperSlicer_$version_win64_$matchTimestamp64"
             }
         }
     }
