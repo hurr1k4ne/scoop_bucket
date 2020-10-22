@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "github": "https://github.com/supermerill/FreeCAD",
-        "regex": "(?sm)FreeCAD_0\\.19\\.[\\d.]+-Win-Conda_vc14\\.x-x86_64\\.7z",
+        "regex": "(?sm)FreeCAD_0\\.19\\.[\\d.]+-Win-Conda_vc14\\.x-x86_64\\.7z"
     },
     "autoupdate": {
         "architecture": {
