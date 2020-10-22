@@ -20,7 +20,7 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/FreeCad/FreeCAD",
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/tag/0.19_pre",
         "regex": "(?sm)FreeCAD_0\\.19\\.[\\d.]+-Win-Conda_vc14\\.x-x86_64\\.7z"
     },
     "autoupdate": {
