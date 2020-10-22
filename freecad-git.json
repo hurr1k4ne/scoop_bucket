@@ -21,13 +21,13 @@
     ],
     "checkver": {
         "url": "https://github.com/FreeCAD/FreeCAD/releases/tag/0.19_pre",
-        "regex": "(?sm)FreeCAD_0\\.19\\.[\\d.]+-Win-Conda_vc14\\.x-x86_64\\.7z"
+        "regex": "(?sm)FreeCAD_([\\d.]+)-Win-Conda_vc14\\.x-x86_64\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_$version-Win-Conda_vc14.x-x86_64.7z",
-                "extract_dir": "FreeCAD_0.19.$version-Win-Conda_vc14.x-x86_64"
+                "extract_dir": "FreeCAD_$version-Win-Conda_vc14.x-x86_64"
             }
         },
         "hash": {
