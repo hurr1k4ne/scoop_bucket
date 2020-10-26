@@ -32,5 +32,10 @@
             "url": "$url-SHA256.txt",
             "regex": "(?sm):\\s+([a-fA-F\\d\\s]+)CertUtil"
         }
-    }
+    },
+    "notes": [ "FreeCAD versions use the same userdata repository and they may be incompatible between them,", 
+               "make sure to backup your user data/config before changing between FreeCAD, FreeCAD pre releases and", 
+               "different FreeCAD builds",
+               "If FreeCAD merges/fixes the Portable versions, this may be solved in the future."
+    ]
 }
