@@ -1,13 +1,13 @@
 {
-    "version": "0.19.22756",
+    "version": "0.19.23756",
     "description": "Freecad nightly builds",
     "homepage": "https://www.freecadweb.org",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_0.19.22756-Win-Conda_vc14.x-x86_64.7z",
-            "extract_dir": "FreeCAD_0.19.22756-Win-Conda_vc14.x-x86_64",
-            "hash": "c0644f2727edc2cfd31604c227191168fd79f85b81bf47371b08fd46d95cd8ee"
+            "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_0.19.23756-Win-Conda_vc14.x-x86_64.7z",
+            "extract_dir": "FreeCAD_0.19.23756-Win-Conda_vc14.x-x86_64",
+            "hash": "7648f824392ca128e53a307a09c74dab7dbf197dab55385414c97f8e3d2ffc6d"
         }
     },
     "bin": "bin\\freecad.exe",
@@ -33,9 +33,10 @@
             "regex": "(?sm):\\s+([a-fA-F\\d\\s]+)CertUtil"
         }
     },
-    "notes": [ "FreeCAD versions use the same userdata repository and they may be incompatible between them,", 
-               "make sure to backup your user data/config before changing between FreeCAD, FreeCAD pre releases and", 
-               "different FreeCAD builds",
-               "If FreeCAD merges/fixes the Portable versions, this may be solved in the future."
+    "notes": [
+        "FreeCAD versions use the same userdata repository and they may be incompatible between them,",
+        "make sure to backup your user data/config before changing between FreeCAD, FreeCAD pre releases and",
+        "different FreeCAD builds",
+        "If FreeCAD merges/fixes the Portable versions, this may be solved in the future."
     ]
 }
