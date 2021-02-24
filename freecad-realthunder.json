@@ -1,11 +1,11 @@
 {
-    "version": "20210126",
+    "version": "20210224",
     "description": "Freecad RealThunder Assembly3 builds",
     "homepage": "https://github.com/realthunder/FreeCAD_assembly3",
     "license": "GPL-2.0",
-    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210126.7z",
-    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210126",
-    "hash": "22d4929002339ae98375e8b36f6c376c01bf8a41bee33a0b2a5ddd27161cf47e",
+    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210224.7z",
+    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210224",
+    "hash": "79621aed723a218a9ebc023255b349dfc2b6a9dfd626f824fb78b1449103ba10",
     "bin": "bin\\FreeCADLink.exe",
     "shortcuts": [
         [
