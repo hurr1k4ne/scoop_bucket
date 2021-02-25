@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.3.55.5/SuperSlicer_2.3.55.5_win64_20210223.zip",
             "hash": "44ac109b289e578d1496e15ace37ff4164e6d2f384c7a57c73937d19677c5d33",
-            "extract_dir": "SuperSlicer_2.3.55.5_win64_20210223"
+            "extract_dir": "SuperSlicer_2.2.53.5_win64_20210223"
         }
     },
     "bin": [
