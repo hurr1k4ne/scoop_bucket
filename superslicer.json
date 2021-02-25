@@ -22,13 +22,13 @@
     ],
     "checkver": {
         "url": "https://github.com/supermerill/SuperSlicer/releases",
-        "regex": "(?sm)SuperSlicer_([\\d.]+)_win64_(?<timestamp64>\\d+)\\.zip"
+        "re": "(?sm)SuperSlicer_(?<version>[\\d.]+)_win64_(?<timestamp64>\\d+)\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/supermerill/SuperSlicer/releases/download/$version/SuperSlicer_$version_win64_$matchTimestamp64.zip",
-                "extract_dir": "SuperSlicer_$version_win64_$matchTimestamp64"
+                "extract_dir": "SuperSlicer_$matchVersion_win64_$matchTimestamp64"
             }
         }
     }
