@@ -1,11 +1,11 @@
 {
-    "version": "20210311",
+    "version": "20210326",
     "description": "Freecad RealThunder Assembly3 builds",
     "homepage": "https://github.com/realthunder/FreeCAD_assembly3",
     "license": "GPL-2.0",
-    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210311.7z",
-    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210311",
-    "hash": "2556c6d8a85694187b36c6a8d71bddadb0b29b54503899167f8bb6b2527f9e4b",
+    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Win64-Py3-Qt5.12-20210326.7z",
+    "extract_dir": "FreeCAD-asm3-Win64-Py3-Qt5.12-20210326",
+    "hash": "2797d13d70473c526a33755afbe50cb2a776c1528be0d2f6d8e97251f8f81083",
     "bin": "bin\\FreeCADLink.exe",
     "shortcuts": [
         [
@@ -15,11 +15,11 @@
     ],
     "checkver": {
         "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/latest",
-        "re": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-(\\d+)\\.7z"
+        "re": "FreeCAD-asm3-Win64-Py3-Qt5\\.12-(\\d+)\\.7z"
     },
     "autoupdate": {
-        "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-$version.7z",
-        "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-$version"
+        "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Win64-Py3-Qt5.12-$version.7z",
+        "extract_dir": "FreeCAD-asm3-Win64-Py3-Qt5.12-$version"
     },
     "notes": [
         "FreeCAD versions use the same userdata repository and they may be incompatible between them,",
