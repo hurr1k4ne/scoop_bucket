@@ -13,6 +13,10 @@
             "FreeCAD"
         ]
     ],
+    "envset": {
+        "FREECAD_USER_HOME": "%APPDATA%",
+        "FREECAD_USER_DATA": "%APPDATA%/Freecad-linkstage3"
+    },
     "checkver": {
         "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/latest",
         "re": "FreeCAD-asm3-Win64-Py3-Qt5\\.12-(\\d+)\\.7z"
