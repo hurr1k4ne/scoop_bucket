@@ -10,7 +10,17 @@
             "hash": "0387ea17bfdcf4c1f8f3dee6805867a6c923b58bd3126bebcfa7e074bf3972d1"
         }
     },
+    "pre_install": [
+        "# Create a persist dir",
+        "if (!(Test-Path \"$dir\\UserData\")) {",
+        "    (New-Item -Type directory \"$dir\\UserData\") | Out-Null",
+        "}"
+    ],
     "bin": "bin\\freecad.exe",
+    "env_set": {
+        "FREECAD_USER_DATA": "$dir\\UserData"
+    },
+    "persist": "UserData",
     "shortcuts": [
         [
             "bin\\freecad.exe",
