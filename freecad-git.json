@@ -17,10 +17,10 @@
         "}",
         "# Create a startup batch file",
         "$CONT=@(",
-        "   set FREECAD_USER_DATA=$dir\\UserData",
-        "   start $dir\\bin\\FreeCad.exe -u %FREECAD_USER_DATA%\\user.cfg -s %FREECAD_USER_DATA%\\system.cfg",
+        "   'set FREECAD_USER_DATA=$dir\\UserData'",
+        "   'start $dir\\bin\\FreeCad.exe -u %FREECAD_USER_DATA%\\user.cfg -s %FREECAD_USER_DATA%\\system.cfg'",
         ")",
-        "Set-Content $dir\\FreeCad_git.bat $CONT -Encoding ASCII"
+        "Set-Content \"$dir\\FreeCad_git.bat\" $CONT -Encoding ASCII"
     ],
     "bin": [ [ "FreeCad_git.bat", "freecad" ] ],
     "env_set": {
