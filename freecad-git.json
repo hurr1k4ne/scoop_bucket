@@ -1,31 +1,31 @@
 {
-    "version": "0.19.24267",
-    "description": "Freecad nightly builds",
+    "version": "0.20.24787",
+    "description": "Freecad weekly builds",
     "homepage": "https://www.freecadweb.org",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_0.19.24267-Win-Conda_vc14.x-x86_64.7z",
-            "extract_dir": "FreeCAD_0.19.24267-Win-Conda_vc14.x-x86_64",
-            "hash": "3697acd86dd4c1551c8c5a205588aa5e1b4ba3df56409c30e13e03cf6b007e78"
+            "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_0.20.24787_Win-LPv12.5.4_vc17.x-x86-64.7z",
+            "extract_dir": "FreeCAD_0.20.24787_Win-LPv12.5.4_vc17.x-x86-64",
+            "hash": "0387ea17bfdcf4c1f8f3dee6805867a6c923b58bd3126bebcfa7e074bf3972d1"
         }
     },
     "bin": "bin\\freecad.exe",
     "shortcuts": [
         [
             "bin\\freecad.exe",
-            "FreeCAD"
+            "FreeCAD - Weekly"
         ]
     ],
     "checkver": {
-        "url": "https://github.com/FreeCAD/FreeCAD/releases/tag/0.19_pre",
-        "regex": "(?sm)FreeCAD_([\\d.]+)-Win-Conda_vc14\\.x-x86_64\\.7z"
+        "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/tag/weekly-builds",
+        "regex": "(?sm)FreeCAD_([\\d.]+)_Win-LPv[\\d.]+_vc[\\d]+.x-x86-64\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/FreeCAD/FreeCAD/releases/download/0.19_pre/FreeCAD_$version-Win-Conda_vc14.x-x86_64.7z",
-                "extract_dir": "FreeCAD_$version-Win-Conda_vc14.x-x86_64"
+                "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_$version_Win-LPv12.5.4_vc17.x-x86-64.7z",
+                "extract_dir": "FreeCAD_$version_Win-LPv12.5.4_vc17.x-x86-64"
             }
         },
         "hash": {
