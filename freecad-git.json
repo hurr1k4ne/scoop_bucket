@@ -14,16 +14,22 @@
         "# Create a persist dir",
         "if (!(Test-Path \"$dir\\UserData\")) {",
         "    (New-Item -Type directory \"$dir\\UserData\") | Out-Null",
-        "}"
+        "}",
+        "# Create a startup batch file",
+        "$CONT=@(",
+        "   set FREECAD_USER_DATA=$dir\\UserData",
+        "   start $dir\\bin\\FreeCad.exe -u %FREECAD_USER_DATA%\\user.cfg -s %FREECAD_USER_DATA%\\system.cfg",
+        ")",
+        "Set-Content $dir\\FreeCad_git.bat $CONT -Encoding ASCII"
     ],
-    "bin": "bin\\freecad.exe",
+    "bin": [ [ "FreeCad_git.bat", "freecad" ] ],
     "env_set": {
         "FREECAD_USER_DATA": "$dir\\UserData"
     },
     "persist": "UserData",
     "shortcuts": [
         [
-            "bin\\freecad.exe",
+            "FreeCad_git.bat",
             "FreeCAD - Weekly"
         ]
     ],
