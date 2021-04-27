@@ -1,29 +1,40 @@
 {
-    "version": "20210328",
+    "version": "20210412",
     "description": "Freecad RealThunder Assembly3 builds",
     "homepage": "https://github.com/realthunder/FreeCAD_assembly3",
     "license": "GPL-2.0",
-    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Win64-Py3-Qt5.12-20210328.7z",
-    "extract_dir": "FreeCAD-asm3-Win64-Py3-Qt5.12-20210328",
-    "hash": "5b22d360f91ffda89f2770f7470136538fd9b73333bcbc88be6b0b8a341ae3e1",
-    "bin": "bin\\FreeCADLink.exe",
+    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210412.7z",
+    "extract_dir": "FreeCAD-asm3-Win64-Py3-Qt5.12-20210412",
+    "hash": "793ed9111172af27db4eb7a90f8b34e2d269df9db58f5a2bc3c78ea445ee7502",
+    "pre_install": [
+        "# Create a persist dir",
+        "if (!(Test-Path \"$dir\\UserData\")) {",
+        "    (New-Item -Type directory \"$dir\\UserData\") | Out-Null",
+        "}",
+        "# Create a startup batch file",
+        "$content = 'set FREECAD_USER_DATA='",
+        "$content += \"$dir\"",
+        "$content += \"\\UserData`n\"",
+        "$content += 'start '",
+        "$content += \"$dir\"",
+        "$content += \"\\bin\\FreeCadLink.exe`n\"",
+        "$content | Set-Content $dir\\FreeCad_rt.bat"
+    ],
+    "persist": "UserData",
+    "bin": [ [ "FreeCad_rt.bat", "freecad" ] ],
     "shortcuts": [
         [
-            "bin\\FreeCADLink.exe",
-            "FreeCAD"
+            "FreeCad_rt.bat",
+            "FreeCAD Link3 - Daily"
         ]
     ],
-    "envset": {
-        "FREECAD_USER_HOME": "%APPDATA%",
-        "FREECAD_USER_DATA": "%APPDATA%/Freecad-linkstage3"
-    },
     "checkver": {
         "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/latest",
-        "re": "FreeCAD-asm3-Win64-Py3-Qt5\\.12-(\\d+)\\.7z"
+        "re": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-(\\d+)\\.7z"
     },
     "autoupdate": {
-        "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Win64-Py3-Qt5.12-$version.7z",
-        "extract_dir": "FreeCAD-asm3-Win64-Py3-Qt5.12-$version"
+        "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-$version.7z",
+        "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-$version"
     },
     "notes": [
         "FreeCAD versions use the same userdata repository and they may be incompatible between them,",

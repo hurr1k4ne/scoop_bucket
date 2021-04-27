@@ -21,13 +21,10 @@
         "$content += \"\\UserData`n\"",
         "$content += 'start '",
         "$content += \"$dir\"",
-        "$content += \"\\bin\\FreeCad.exe -u %FREECAD_USER_DATA%\\user.cfg -s %FREECAD_USER_DATA%\\system.cfg`n\"",
+        "$content += \"\\bin\\FreeCad.exe`n\"",
         "$content | Set-Content $dir\\FreeCad_git.bat"
     ],
     "bin": [ [ "FreeCad_git.bat", "freecad" ] ],
-    "env_set": {
-        "FREECAD_USER_DATA": "$dir\\UserData"
-    },
     "persist": "UserData",
     "shortcuts": [
         [
