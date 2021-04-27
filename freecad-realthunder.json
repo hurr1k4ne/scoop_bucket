@@ -4,7 +4,7 @@
     "homepage": "https://github.com/realthunder/FreeCAD_assembly3",
     "license": "GPL-2.0",
     "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210412.7z",
-    "extract_dir": "FreeCAD-asm3-Win64-Py3-Qt5.12-20210412",
+    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210412",
     "hash": "793ed9111172af27db4eb7a90f8b34e2d269df9db58f5a2bc3c78ea445ee7502",
     "pre_install": [
         "# Create a persist dir",
