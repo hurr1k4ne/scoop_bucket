@@ -25,7 +25,9 @@
     "shortcuts": [
         [
             "FreeCad_rt.bat",
-            "FreeCAD Link3 - Daily"
+            "FreeCAD Link3 - Daily",
+            "",
+            "bin\\FreeCadLink.exe"
         ]
     ],
     "checkver": {
