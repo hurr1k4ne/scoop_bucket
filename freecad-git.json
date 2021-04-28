@@ -1,13 +1,13 @@
 {
-    "version": "0.20.24787",
+    "version": "24789",
     "description": "Freecad weekly builds",
     "homepage": "https://www.freecadweb.org",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_0.20.24787_Win-LPv12.5.4_vc17.x-x86-64.7z",
-            "extract_dir": "FreeCAD_0.20.24787_Win-LPv12.5.4_vc17.x-x86-64",
-            "hash": "0387ea17bfdcf4c1f8f3dee6805867a6c923b58bd3126bebcfa7e074bf3972d1"
+            "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-24789-Win-Conda_vc14.x-x86_64.7z",
+            "extract_dir": "FreeCAD_weekly-builds-24789-Win-Conda_vc14.x-x86_64",
+            "hash": "e1d4eb0a4f402c164142ec2f6849971682cfb997b4d6dcfa3c64687cb06f0c8a"
         }
     },
     "pre_install": [
@@ -24,23 +24,30 @@
         "$content += \"\\bin\\FreeCad.exe`n\"",
         "$content | Set-Content $dir\\FreeCad_git.bat"
     ],
-    "bin": [ [ "FreeCad_git.bat", "freecad" ] ],
+    "bin": [
+        [
+            "FreeCad_git.bat",
+            "freecad"
+        ]
+    ],
     "persist": "UserData",
     "shortcuts": [
         [
             "FreeCad_git.bat",
-            "FreeCAD - Weekly"
+            "FreeCAD - Weekly",
+            "",
+            "bin\\FreeCad.exe"
         ]
     ],
     "checkver": {
         "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/tag/weekly-builds",
-        "regex": "(?sm)FreeCAD_([\\d.]+)_Win-LPv[\\d.]+_vc[\\d]+.x-x86-64\\.7z"
+        "regex": "(?sm)FreeCAD_weekly-builds-([\\d.]+)-Win-Conda_vc14\\.x-x86_64\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_$version_Win-LPv12.5.4_vc17.x-x86-64.7z",
-                "extract_dir": "FreeCAD_$version_Win-LPv12.5.4_vc17.x-x86-64"
+                "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-$version-Win-Conda_vc14.x-x86_64.7z",
+                "extract_dir": "FreeCAD_weekly-builds-$version-Win-Conda_vc14.x-x86_64"
             }
         },
         "hash": {
