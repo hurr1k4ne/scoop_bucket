@@ -1,11 +1,11 @@
 {
-    "version": "20210412",
+    "version": "20210501",
     "description": "Freecad RealThunder Assembly3 builds",
     "homepage": "https://github.com/realthunder/FreeCAD_assembly3",
     "license": "GPL-2.0",
-    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210412.7z",
-    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210412",
-    "hash": "793ed9111172af27db4eb7a90f8b34e2d269df9db58f5a2bc3c78ea445ee7502",
+    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210501.7z",
+    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210501",
+    "hash": "4f50559ea0def9f990f8751f3292f3eaff232fd988f3fba485d6a556e99da087",
     "pre_install": [
         "# Create a persist dir",
         "if (!(Test-Path \"$dir\\UserData\")) {",
@@ -21,7 +21,12 @@
         "$content | Set-Content $dir\\FreeCad_rt.bat"
     ],
     "persist": "UserData",
-    "bin": [ [ "FreeCad_rt.bat", "freecad" ] ],
+    "bin": [
+        [
+            "FreeCad_rt.bat",
+            "freecad"
+        ]
+    ],
     "shortcuts": [
         [
             "FreeCad_rt.bat",
