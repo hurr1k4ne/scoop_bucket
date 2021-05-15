@@ -1,11 +1,11 @@
 {
-    "version": "20210501",
+    "version": "20210513",
     "description": "Freecad RealThunder Assembly3 builds",
     "homepage": "https://github.com/realthunder/FreeCAD_assembly3",
     "license": "GPL-2.0",
-    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210501.7z",
-    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210501",
-    "hash": "4f50559ea0def9f990f8751f3292f3eaff232fd988f3fba485d6a556e99da087",
+    "url": "https://github.com/realthunder/FreeCAD_assembly3/releases/download/0.11/FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210513.7z",
+    "extract_dir": "FreeCAD-asm3-Daily-Win64-Py3-Qt5-20210513",
+    "hash": "198058c9bdafef45a7e0011bef3958779c58cc250514b91d2a66c85a843fd203",
     "pre_install": [
         "# Create a persist dir",
         "if (!(Test-Path \"$dir\\UserData\")) {",

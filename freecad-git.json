@@ -1,13 +1,13 @@
 {
-    "version": "24825",
+    "version": "24847",
     "description": "Freecad weekly builds",
     "homepage": "https://www.freecadweb.org",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-24825-Win-Conda_vc14.x-x86_64.7z",
-            "extract_dir": "FreeCAD_weekly-builds-24825-Win-Conda_vc14.x-x86_64",
-            "hash": "4a8dd51be13750caa791785899d426b79406e9d74a2f76c7c88fd414cd46a2e6"
+            "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-24847-Win-Conda_vc14.x-x86_64.7z",
+            "extract_dir": "FreeCAD_weekly-builds-24847-Win-Conda_vc14.x-x86_64",
+            "hash": "13b91de0be91c68c6d2c3292348644f18dd11fa41ed0836e8ff380ea7255aa61"
         }
     },
     "pre_install": [
