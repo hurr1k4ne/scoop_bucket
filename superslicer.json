@@ -1,13 +1,13 @@
 {
-    "version": "2.3.56.6",
+    "version": "2.3.56.8",
     "description": "G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.). Fork of Prusa Slicer with experimental features.",
     "homepage": "https://https://github.com/supermerill/SuperSlicer",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.3.56.6/SuperSlicer_2.3.56.6_win64_210626.zip",
-            "hash": "97f7acbd294450efcc655d36d90f95fe61c186b0b9be4fee44640147a1ed3268",
-            "extract_dir": "SuperSlicer_2.3.56.6_win64_210626"
+            "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.3.56.8/SuperSlicer_2.3.56.8_win64_210808.zip",
+            "hash": "8979d44a0e357be935f79aa0e881ef320c9ced392a6ad46b72da775442fd16e7",
+            "extract_dir": "SuperSlicer_2.3.56.8_win64_210808"
         }
     },
     "bin": [
